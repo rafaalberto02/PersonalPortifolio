@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#navbar {
+  width: 100%;
+  position: fixed;
+  background-color: #121212;
+  box-shadow: 5px -5px 10px black;
+}
+
+#navbar ul {
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+  padding: 1rem;
+}
+
+#navbar ul li a {
+  font-size: 1.2rem;
+}
+
+#navbar ul li a:hover {
+  color: #8e14d1;
+}
+
+#welcome-section {
+  background-color: #121212;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+#welcome-section p {
+  font-size: 1.8rem;
+  color: #8e14d1;
+}
+
+#projects {
+  width: 100%;
+  background-color: #121212;
+  text-align: center;
+}
+
+#projects h2 {
+  color: white;
+  padding-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  margin: 2rem;
+  padding-bottom: 1rem;
+  min-width: 25%;
+  max-width: 280px;
+  background-color: #121212;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.project h3 {
+  font-size: 1rem;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project:hover .code {
+  color: #8e14d1;
+}
+
+.code {
+  color: #121212;
+  transition: color 0.3s ease-out;
+}
+
+.btn-projects {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 80px;
+  background-color: #8e14d1;
+  color: white;
+  margin: 3rem 0 1rem 0;
+  transition: background-color 0.4s linear;
+  box-shadow: 1px 1px 5px black;
+}
+
+.btn-projects:hover {
+  color: #8e14d1;
+  background-color: white;
+}
+
+#contact {
+  height: 100vh;
+  text-align: center;
+  color: white;
+  background-color: #121212;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-header h2 {
+  font-size: 3rem;
+}
+.contact-header p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.contact-details {
+  padding: 0.8rem;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #navbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  #navbar ul {
+    float: none;
+  }
+
+  #welcome-section h1 {
+    font-size: 2rem;
+  }
+
+  #welcome-section p {
+    font-size: 1.2rem;
+  }
+
+  #projects h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-header h2 {
+    font-size: 2rem;
+  }
+
+  .contact-header p {
+    font-size: 1.2rem;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .contact-details {
+    font-size: 1rem;
+  }
+}
+
+.facebook:hover {
+  color: #3b5998;
+}
+
+.github:hover {
+  color: #c9510c;
+}
+
+.twitter:hover {
+  color: #00acee;
+}
+
+.at:hover {
+  color: #bb001b;
+}
+
+.phone:hover {
+  color: #0c4da2;
+}
+
+footer {
+  background-color: #121212;
+  color: white;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px -1px 10px rgba(0, 0, 0, 0.4);
+}
+
+footer span {
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+#navbar ul li a,
+#welcome-section h1,
+#welcome-section p,
+#projects h2,
+.contact-header p,
+.contact-header h2,
+.contact-details,
+footer span {
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+*::selection {
+  color: white;
+  background-color: #8e14d1;
+}
